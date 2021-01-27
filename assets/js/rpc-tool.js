@@ -52,7 +52,7 @@ jQuery(function ($) {
 
     var locationWithoutHash = location.protocol+'//'+location.hostname+(location.port?":"+location.port:"")+location.pathname+(location.search?location.search:"");
     $("#permalink").attr("href", locationWithoutHash + "#" + target);
-    $("#graphlink").attr("href", "https://www.ripplecharts.com/#/graph/" + target);
+    $("#graphlink").attr("href", "https://xrpcharts.ripple.com/#/graph/" + target);
 
     if (ripple.UInt160.from_json(target).is_valid()) {
       // Account
